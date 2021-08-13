@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/skin">
+
+<!--    <androidx.fragment.app.FragmentContainerView-->
+<!--        android:id="@+id/nav_host_fragment"-->
+<!--        android:name="androidx.navigation.fragment.NavHostFragment"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+
+<!--        app:defaultNavHost="true"-->
+<!--        app:navGraph="@navigation/nav_graph" />-->
+
+    <FrameLayout
+        android:id="@+id/framenumbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:layout_margin="5sp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/numbers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16sp"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="NUMBERS"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="100dp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/framephrases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        app:layout_constraintTop_toBottomOf="@+id/framenumbers"
+        android:background="@color/orange">
+
+        <TextView
+            android:id="@+id/phrases"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="16sp"
+            android:text="PHRASES"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="parent"
+            tools:layout_editor_absoluteX="100dp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/framecolours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        app:layout_constraintTop_toBottomOf="@+id/framephrases"
+        android:background="@color/teal_700">
+
+        <TextView
+            android:id="@+id/colours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16sp"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="COLOURS"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="parent"
+            tools:layout_editor_absoluteX="134dp" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/framefamilymembers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        app:layout_constraintTop_toBottomOf="@+id/framecolours"
+        android:background="@color/purple_200">
+
+        <TextView
+            android:id="@+id/family_members"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16sp"
+            android:text="FAMILY MEMBERS"
+            android:background="?android:attr/selectableItemBackground"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="parent"
+            tools:layout_editor_absoluteX="106dp" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
